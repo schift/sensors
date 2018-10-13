@@ -4,6 +4,7 @@ import com.surowka.SensorController;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.Asserts;
 import org.eclipse.jgit.api.errors.GitAPIException;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import spark.Request;
 
@@ -21,6 +22,7 @@ public class EngineServiceTest {
 
     private EngineService engineService = new EngineService();
 
+	@Disabled
     @Test
     void should_return_expected_list_of_values() throws IOException, GitAPIException {
 
