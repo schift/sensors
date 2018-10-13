@@ -1,8 +1,6 @@
 package com.surowka.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.surowka.enums.OperationType;
-
 import java.util.Objects;
 
 public class OperationPayload {

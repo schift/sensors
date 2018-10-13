@@ -3,13 +3,9 @@ package com.surowka.services;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.surowka.model.OperationPayload;
 import com.surowka.model.Sensor;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.*;
-
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

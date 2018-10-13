@@ -7,7 +7,6 @@ import com.surowka.model.Sensor;
 import org.apache.commons.io.FileUtils;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,7 +1,6 @@
 package com.surowka.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.util.Objects;
 
 public class Sensor {

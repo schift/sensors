@@ -5,7 +5,6 @@ import com.surowka.enums.SensorType;
 import com.surowka.model.OperationPayload;
 import com.surowka.model.Sensor;
 import org.apache.commons.lang3.StringUtils;
-
 import java.util.*;
 
 public class SensorActionHandlerService {
