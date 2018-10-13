@@ -22,7 +22,7 @@
   location: ""
   type: "pressure"
   name: "Engine 156"
-  value: 73
+  value: 273
   min_value: 0
   max_value: 150
 - id: "89145"
