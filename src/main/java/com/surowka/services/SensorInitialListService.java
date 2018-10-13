@@ -16,12 +16,12 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
-public class SensorService {
+public class SensorInitialListService {
 
     private final String repoName;
     private final String repoGitUrl;
 
-    public SensorService(String url) {
+    public SensorInitialListService(String url) {
         String tempURL = url.substring(0, url.indexOf("/blob"));
         repoName = tempURL.substring(tempURL.lastIndexOf("/") + 1);
         repoGitUrl = tempURL.concat(".git");

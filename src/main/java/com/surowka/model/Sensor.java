@@ -18,12 +18,85 @@ public class Sensor {
     @JsonProperty
     private String name;
     @JsonProperty
-    private String value;
+    private Integer value;
     @JsonProperty
     private Integer min_value;
     @JsonProperty
     private Integer max_value;
 
+    public Sensor() {}
+
+    private Sensor(SensorBuilder builder) {
+        this.id = builder.id;
+        this.master_sensor_id = builder.master_sensor_id;
+        this.location = builder.location;
+        this.engine = builder.engine;
+        this.type = builder.type;
+        this.name = builder.name;
+        this.value = builder.value;
+        this.min_value = builder.min_value;
+        this.max_value = builder.max_value;
+    }
+
+    public static class SensorBuilder {
+        private String id;
+        private String master_sensor_id;
+        private String location;
+        private String engine;
+        private String type;
+        private String name;
+        private Integer value;
+        private Integer min_value;
+        private Integer max_value;
+
+        public SensorBuilder(String id) {
+            this.id = id;
+        }
+
+        public SensorBuilder masterSensorId(String master_sensor_id) {
+            this.master_sensor_id = master_sensor_id;
+            return this;
+        }
+
+        public SensorBuilder type(String type) {
+            this.type = type;
+            return this;
+        }
+
+        public SensorBuilder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public SensorBuilder location(String location) {
+            this.location = location;
+            return this;
+        }
+
+        public SensorBuilder engine(String engine) {
+            this.engine = engine;
+            return this;
+        }
+
+        public SensorBuilder value(Integer value) {
+            this.value = value;
+            return this;
+        }
+
+        public SensorBuilder min_value(Integer min_value) {
+            this.min_value = min_value;
+            return this;
+        }
+
+        public SensorBuilder max_value(Integer max_value) {
+            this.max_value = max_value;
+            return this;
+        }
+
+        public Sensor build() {
+            return new Sensor(this);
+        }
+    }
 
     public String getId() {
         return id;
@@ -73,11 +146,11 @@ public class Sensor {
         this.name = name;
     }
 
-    public String getValue() {
+    public Integer getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(Integer value) {
         this.value = value;
     }
 
